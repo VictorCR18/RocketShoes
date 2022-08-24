@@ -20,10 +20,10 @@ body {
     position: relative;
 }
 
-
 header {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 39px 0;
     text-align: start;
@@ -58,7 +58,7 @@ aside {
     margin: 0 72px 0 111px;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 aside h1 {
@@ -97,6 +97,10 @@ aside button {
     line-height: 28px;
 }
 
+aside button:focus {
+    background: #bc3333;
+}
+
 main {
     width: 900px;
     height: 914px;
@@ -131,6 +135,12 @@ main #tenis2 {
 main #tenis3 {
     width: 270px;
     height: 182.8px;
+}
+
+.tenis:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease 0s;
+    cursor: pointer;
 }
 
 footer {
