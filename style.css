@@ -111,37 +111,33 @@ aside button:focus {
 
 main {
     flex: 2;
+    width: auto;
     height: 914px;
     background-color: #C4C4C4;
 }
 
 main article {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-end;
     height: 100%;
+    width: auto;
     background: url(assets/tenis-1-ampliado.png) no-repeat;
     background-position: center;
+}
+
+.article-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .tenis {
     margin-bottom: 40.62px;
 }
 
-main #tenis1 {
-    width: auto;
-    height: 182.8px;
-}
-
-main #tenis2 {
-    width: auto;
-    height: 177.8px;
+main article #tenis2 {
     border-bottom: 5px #FF0000 solid;
-}
-
-main #tenis3 {
-    width: auto;
-    height: 182.8px;
 }
 
 .tenis:hover {
@@ -153,11 +149,13 @@ main #tenis3 {
 footer {
     display: flex;
     width: 100%;
+    height: 100%;
 }
 
 section {
     display: flex;
     width: 100%;
+    height: auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -185,6 +183,16 @@ section {
     margin-left: 14px;
 }
 
-@media screen and (max-width: 1024px) {
-   
+@media screen and (max-width: 1401px) {
+
+    main #tenis2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1131px) {
+
+    main #tenis3 {
+        display: none;
+    }
 }
