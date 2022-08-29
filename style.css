@@ -169,7 +169,15 @@ section {
     background: url(assets/img-video.png) no-repeat;
 }
 
+.list{
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 3;
+}
+
 .plus {
+    flex: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,6 +210,11 @@ section {
     main article {
         justify-content: center;
     }
+
+    main article{
+     background-size: contain;   
+    }
+
     .article-content{
         display: none;
     }
@@ -222,4 +235,7 @@ section {
         border-radius: 30px;
     }
 
+    .plus{
+
+    }
 }
