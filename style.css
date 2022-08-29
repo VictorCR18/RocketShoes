@@ -183,6 +183,10 @@ section {
     margin-left: 14px;
 }
 
+.conteudo{
+    display: none;
+}
+
 @media screen and (max-width: 1401px) {
 
     main #tenis2 {
@@ -192,7 +196,30 @@ section {
 
 @media screen and (max-width: 1131px) {
 
-    main #tenis3 {
+    main #tenis1, main #tenis3 {
         display: none;
     }
+    main article {
+        justify-content: center;
+    }
+    .article-content{
+        display: none;
+    }
+
+    .conteudo{
+        display: flex;
+        width: 323px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 25px;
+        column-gap: 20px;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    
+    .card{
+        padding: 30px;
+        scroll-snap-align: start;
+        border-radius: 30px;
+    }
+
 }
