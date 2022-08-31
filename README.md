@@ -1,3 +1,3 @@
 # RocketShoes
 
-- fazer slide reponsivel 1131px
+- tornar reponsivel
